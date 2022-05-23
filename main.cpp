@@ -1,16 +1,12 @@
 #include "LinkedList.h"
 #include "Node.h"
-
 #include <iostream>
 #include <string>
 #include <limits>
 #include <stdlib.h>
-
 using namespace std;
 
-
 int main() {
-
 
 int arr[100];
 int temp;
