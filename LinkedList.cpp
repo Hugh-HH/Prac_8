@@ -5,13 +5,14 @@
 
 
 LinkedList::LinkedList() {
-    head = NULL; 
+    head = nullptr; 
 }
 
 LinkedList::LinkedList(int* arr, int size) {
     for(int i = size-1; i >= 0; i--) {
         LinkedList::addFront(arr[i]);
     }
+     head = nullptr; 
 }
 
 void LinkedList::addFront(int newItem) { 
@@ -157,6 +158,7 @@ Node* temp = head;
     std::cout << temp->get_data() << " ";
 
     temp = temp->get_next();
+
     } 
 
     std::cout << std::endl;
