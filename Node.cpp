@@ -4,7 +4,7 @@
 
 Node::Node() {
     data = -99;
-    next = nullptr;
+    next = NULL;
 }
 
 int Node::get_data() { 

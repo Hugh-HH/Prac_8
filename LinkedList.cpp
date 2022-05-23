@@ -9,10 +9,11 @@ LinkedList::LinkedList() {
 }
 
 LinkedList::LinkedList(int* arr, int size) {
+    head = nullptr; 
     for(int i = size-1; i >= 0; i--) {
         LinkedList::addFront(arr[i]);
     }
-     head = nullptr; 
+
 }
 
 void LinkedList::addFront(int newItem) { 
@@ -154,9 +155,10 @@ void LinkedList::printItems() {
 
 Node* temp = head; 
     while(temp != NULL) {
-
+    
+    if (temp->get_data() < 100 || temp->get_data() > 100) {
     std::cout << temp->get_data() << " ";
-
+    }
     temp = temp->get_next();
 
     } 
